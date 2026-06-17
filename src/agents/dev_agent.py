@@ -41,7 +41,7 @@ def get_llm(temperature=0.1):
     if not api_key:
         raise ValueError("GROQ_API_KEY not set")
     return ChatGroq(
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         temperature=temperature,
         max_tokens=4096,
         api_key=api_key,
